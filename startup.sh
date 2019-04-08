@@ -1,1 +1,1 @@
-nohup java -jar suchapp-0.0.1-SNAPSHOT.jar
+nohup java -jar /var/www/html/suchapp-0.0.1-SNAPSHOT.jar
