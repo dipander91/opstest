@@ -4,7 +4,7 @@ files:
   - source: target/suchapp-0.0.1-SNAPSHOT.jar
     destination: /var/www/html/
 hooks:
-  AfterInstall:
+  ApplicationStart:
     - location: startup.sh
       timeout: 300
       runas: root
