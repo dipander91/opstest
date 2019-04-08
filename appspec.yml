@@ -1,14 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
+  - source: target/suchapp-0.0.1-SNAPSHOT.jar
     destination: /var/www/html/
 hooks:
-  BeforeInstall:
-    - location: deploy/before_install
-      timeout: 300
-      runas: ubuntu
   AfterInstall:
-    - location: deploy/restart_server
+    - location: startup.sh
       timeout: 300
       runas: ubuntu
