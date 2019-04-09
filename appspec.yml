@@ -4,6 +4,11 @@ files:
   - source: target/suchapp-0.0.1-SNAPSHOT.jar
     destination: /var/www/html/
 hooks:
+  BeforeInstall:
+    - location: beforestart.sh
+      timeout: 120
+      mode: 777
+      runas: root
   ApplicationStart:
     - location: startup.sh
       timeout: 120
