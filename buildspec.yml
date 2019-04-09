@@ -12,3 +12,4 @@ artifacts:
      - target/suchapp-0.0.1-SNAPSHOT.jar
      - appspec.yml
      - startup.sh
+     - beforestart.sh
