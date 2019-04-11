@@ -13,6 +13,6 @@ public class SuchController {
 
 	@RequestMapping("/hello")
 	public String suchHello(){
-		return "hello " + suchName + " at " + new Timestamp(System.currentTimeMillis());
+		return "hello " + suchName + "From" + EC2MetadataUtils.getAvailabilityZone() + "at" + new Timestamp(System.currentTimeMillis());
 	}
 }
